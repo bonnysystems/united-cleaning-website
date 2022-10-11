@@ -4,7 +4,6 @@
 
 website for united cleaning corporation
 
-
 ## setup
 
 1. [install pnpm](https://pnpm.io/installation)
@@ -20,3 +19,8 @@ website for united cleaning corporation
 - react
 - svelte
 - preact
+
+## resources
+
+- https://docs.astro.build/en/getting-started/
+- https://github.com/playform/blank-web-starter
