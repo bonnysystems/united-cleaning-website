@@ -3,7 +3,12 @@ import { container } from "./index.css";
 
 class Footer extends Component {
   render() {
-    return <footer className={container}>united cleaning corp.</footer>;
+    const currentYear = new Date().getFullYear();
+    return (
+      <footer className={container}>
+        &copy; {currentYear} United Cleaning Corp.
+      </footer>
+    );
   }
 }
 
