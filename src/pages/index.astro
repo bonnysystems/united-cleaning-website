@@ -10,7 +10,6 @@ const currentYear = new Date().getFullYear();
       alt="United Cleaning logo with a pressure washer on the right spraying at a blue circle on the left with the text 'United Cleaning Corp' spread across"
       width="300"
     />
-    <a href="tel:9739424825">Contact us</a>
   </header>
   <main>
     <section>
@@ -19,6 +18,9 @@ const currentYear = new Date().getFullYear();
         Specializing in kitchen exhaust systems & equipment pressure washing
         since 1992
       </em>
+      <p>
+        <a href="tel:9739424825">Contact us</a>
+      </p>
     </section>
     <section>
       <h3>About us</h3>
@@ -88,9 +90,8 @@ const currentYear = new Date().getFullYear();
     font-size: 1.2em;
     border: none;
   }
-  header > a {
-    width: max-content;
-    height: fit-content;
+  section:first-child a {
+    font-weight: 600;
   }
   footer {
     display: flex;
