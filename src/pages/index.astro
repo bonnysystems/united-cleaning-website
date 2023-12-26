@@ -1,6 +1,106 @@
 ---
-import Home from "../components/pages/Home";
 import Layout from "../layouts/Layout.astro";
+const currentYear = new Date().getFullYear();
 ---
 
-<Layout title="Home"><Home client:load /></Layout>
+<Layout title="United Cleaning">
+  <header>
+    <img
+      src="/logos/logo.png"
+      alt="United Cleaning logo with a pressure washer on the right spraying at a blue circle on the left with the text 'United Cleaning Corp' spread across"
+      width="300"
+    />
+    <a href="tel:9739424825">Contact us</a>
+  </header>
+  <main>
+    <section>
+      <h1>United Cleaning</h1>
+      <em>
+        Specializing in kitchen exhaust systems & equipment pressure washing
+        since 1992
+      </em>
+    </section>
+    <section>
+      <h3>About us</h3>
+      <p>
+        With over <strong>30 years in business</strong> serving Northern &
+        Central New Jersey, we have built a reputation of quality and service
+        unsurpassed in the hood cleaning industry. We provide 24 hour emergency
+        services and free estimates - our work is guaranteed and your
+        satisfaction is our main concern and goal.
+      </p>
+      <p>
+        As well, we provide pressure washing, steam cleaning and chemical
+        treatment for all commercial and industrial hoods. Customers include
+        restaurants, schools, hospitals, country clubs, and malls.
+      </p>
+    </section>
+    <section>
+      <h3>Services</h3>
+      <h4>Filter Cleaning</h4>
+      <p>
+        We take pride in cleaning your kitchen's filters. Once we're done with
+        the job, you'll think that you just bought the filters yesterday.
+      </p>
+      <h4>Dryer Vent Cleaning</h4>
+      <p>Our team will take care of your vent and dry it up clean!</p>
+      <h4>Floor Chemical Treatment</h4>
+      <p>
+        Not only do we take care of your hoods and filters, but we'll clean up
+        your floors to make them look squeaky clean.
+      </p>
+      <h4>Access Panel Installation</h4>
+      <p>We provide services to install access panels.</p>
+      <h4>Motor Service and Repair</h4>
+      <p>
+        Need a new motor? Want us to repair your currently existing motors? We
+        got you covered there too!
+      </p>
+    </section>
+    <section>
+      <h3>Contact us</h3>
+      <p>
+        Give us a call at <a href="tel:9739424825">(973) 942-4825</a> or send us
+        an email at <a href="mailto:unitedcorp@optonline.net"
+          >unitedcorp [at] optonline [dot] net</a
+        >!
+      </p>
+    </section>
+  </main>
+  <footer>
+    <span>
+      &copy; {currentYear} United Cleaning Corp.
+    </span>
+    <div>
+      <img src="/logos/bbb-logo.png" alt="" width="150" height="60" />
+      <img src="/logos/njbia-logo.png" alt="" width="140" height="140" />
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: transparent;
+    font-size: 1.2em;
+    border: none;
+  }
+  header > a {
+    width: max-content;
+    height: fit-content;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  footer > div {
+    display: flex;
+    align-items: center;
+  }
+</style>

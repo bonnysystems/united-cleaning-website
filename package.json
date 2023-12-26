@@ -1,28 +1,17 @@
 {
-  "name": "@example/basics",
+  "name": "united-cleaning-website",
   "type": "module",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^1.0.4",
-    "@astrojs/preact": "^1.1.0",
-    "@astrojs/react": "^1.1.4",
-    "@astrojs/svelte": "^1.0.0",
-    "astro": "^1.0.0",
-    "astro-vanilla-extract": "^1.0.0",
-    "preact": "^10.6.5",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "svelte": "^3.46.4"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.21"
+    "@astrojs/check": "^0.3.4",
+    "astro": "^4.0.7",
+    "typescript": "^5.3.3"
   }
 }
